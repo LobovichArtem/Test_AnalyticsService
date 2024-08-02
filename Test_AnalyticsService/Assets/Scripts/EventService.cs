@@ -22,7 +22,7 @@ public class EventService : MonoBehaviour
         _saveLoadSystem = new SaveLoadSystem();
 
         if (_cooldownCoroutine == null)        
-            StartCoroutine(CooldownCoroutine());
+            _cooldownCoroutine = StartCoroutine(CooldownCoroutine());
     }
 
     
